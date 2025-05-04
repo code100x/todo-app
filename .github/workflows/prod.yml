@@ -36,7 +36,7 @@ jobs:
           git clone https://github.com/100xdevs-cohort-3/argo-deployment.git
           cd argo-deployment
 
-          sed -i 's|image: 100xdevs/todo-app-week-39:.*|image: 100xdevs/todo-app-week-39:${{ github.sha }}|' mainfest.yml
+          sed -i 's|image: 100xdevs/todo-app-week-39:.*|image: 100xdevs/todo-app-week-39:${{ github.sha }}|' manifest.yml
 
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
